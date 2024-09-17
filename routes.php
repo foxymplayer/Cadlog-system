@@ -7,6 +7,7 @@ require 'controllers/DashboardController.php';
 
 //cria instancias dos controladores para ultilizar seus metodos//
 $authController = new AuthController();
+$userController = nem UserController();
 
 //coleta a ação da url, se não tiver nenhum login definido ele usa 'login' por padão//
 $action = $_GET['action'] ?? 'login';

@@ -5,8 +5,11 @@ require_once 'models/user.php';
 
 class AuthController{
     //cria função responsavel pelo processo de login//
-    public function login(){
-        
+    public function login()
+    {
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            
+        }   
     }
 }
 ?>
