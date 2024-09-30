@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+body{
+    background-color: rgba(10, 10, 160, 0.692);
+}
+.txt1{
+    font-family: "Fredoka", sans-serif;
+
+    position: relative;
+    left: 135px;
+}
+.fundo2{
+    background-color: #FFFFFF;
+    border: black;
+    border-radius: 20px;
+    
+    width: 500px;
+    height: 300px;
+
+    position: absolute;
+    left: 450px;
+    top: 50px;
+}
+.nome{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    border-width: 2px;
+    border-top: 2px solid rgb(139, 139, 139);
+    border-left: 2px solid rgb(139, 139, 139) ;
+    border-radius: 2px;
+
+    position: relative;
+    left: 90px;
+}
+.email{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    border-width: 2px;
+    border-top: 2px solid rgb(139, 139, 139);
+    border-left: 2px solid rgb(139, 139, 139) ;
+    border-radius: 2px;
+
+    position: relative;
+    left: 90px;
+    top: 20px;
+}
+.senha{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    border-width: 2px;
+    border-top: 2px solid rgb(139, 139, 139);
+    border-left: 2px solid rgb(139, 139, 139) ;
+    border-radius: 2px;
+
+    position: relative;
+    left: 90px;
+    top: 40px;
+}
+.seleciona{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-width: 2px;
+    border-top: 2px solid rgb(139, 139, 139);
+    border-left: 2px solid rgb(139, 139, 139) ;
+    border-radius: 2px;
+
+    position: relative;
+    left: -250px;
+    top: 80px;
+}
+.botão{
+    background-color: rgb(3, 73, 165);
+    border: none;
+    border-radius: 2px;
+    width: 70px;
+    height: 25px;
+    color: #FFFFFF;
+
+    position: absolute;
+    left: 290px;
+    top: 203px;
+}
+.link{
+    font-family: "Fredoka", sans-serif;
+    width: 200px;
+
+    position: absolute;
+    left: 350px;
+    top: 260px;
+}

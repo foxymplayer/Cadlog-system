@@ -8,7 +8,10 @@ class AuthController{
     public function login()
     {
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            
+            $email = $_POST['email'];
+            $senha = $_post['senha'];
+
+            $user = User::findByEmail($email);
         }   
     }
 }
