@@ -7,7 +7,8 @@ require 'controllers/DashboardController.php';
 
 //cria instancias dos controladores para ultilizar seus metodos//
 $authController = new AuthController();
-$userController = nem UserController();
+$userController = new UserController();
+$dashboardController = new DashboardController();
 
 //coleta a ação da url, se não tiver nenhum login definido ele usa 'login' por padão//
 $action = $_GET['action'] ?? 'login';
@@ -16,5 +17,18 @@ $action = $_GET['action'] ?? 'login';
 switch($action){
     case 'login':
         $authController->login();
+        break;
+    case 'register':
+        $userController->register();
+        break;
+    case 'dashboard':
+        $dashboardController->index();
+        break;
+    case 'logout':
+        $authController->logout();
+        break;
+    default:
+        $authController->login();
+        break;
 }
 ?>

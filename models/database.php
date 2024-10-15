@@ -7,16 +7,16 @@ class Database{
     public static function getConnection(){
         if(!self::$instance){
             $host     ='localhost';
-            $db       ='sistema_usuarios';
+            $db       ='sistema_usuario';
             $user     ='root';
             $password ='';
 
             //a conexão usa o driver mysql (mysql:) e as informações de host
 
-            self::$instance = new PDO("mysql:host=$host;dbname=$db, $user,$password");
+            self::$instance = new PDO("mysql:host=$host;dbname=$db", $user, $password);
 
         // define o modo de erro  para exeções, facilitando a depuração e tratamento de erro//
-            self::$instance->setAttributr(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         return self::$instance;
     }

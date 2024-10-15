@@ -1,6 +1,7 @@
 <?php
 //Definição da classe UseController, reponsavel por gerenciar as ações relacionadas aos usuarios.//
 class UserController{
+    
     public function register(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $data = [
@@ -12,11 +13,11 @@ class UserController{
             ];
 
             User::create($data);
-            header::('location: index.php');
-            else{
+            header('Location: index.php');
+            
+        }else{
                 // se a requisição nao for do tipo POST(por exemplo, GET), carrega a pagina de registro//
-                include 'views/register.php;'
-            }
+                include 'views/register.php';
         }
     }
 }
