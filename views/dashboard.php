@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" type='text/css' media='screen' href="">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+    body{
+        background-color:  rgba(10, 10, 160, 0.692);
+    }
+
+    .container{
+        background-color: #FFFFFF;
+        width: 700px;
+        border-radius: 20px;
+        text-align: center;
+
+        position: relative;
+        left:325px;
+    }
+    </style>
 </head>
  
 <body class="<?=$_SESSION['perfil']?>"> <!-- Define a classe com base no perfil -->
