@@ -37,3 +37,10 @@ alem de ter adicionado o select(adimn, gestor e colaborador), coloquei o link pa
 
 * Login:
 adicionei o link e estilizei.
+
+* Dashboard: ultilizando metodos php para a tela aparecer de jeitos  diferentes dependedo de qual usuario você estiver usando, e linkei com a tela de gerenciar usuarios.
+
+-Já está estilizado.
+
+* List: Já está aparecendo para colaboradores e adms, mas os botões excluir e editar ainda não estão funcionais.
+

@@ -22,6 +22,32 @@
         position: relative;
         left:325px;
     }
+    h1{
+        font-family: "Fredoka", sans-serif;
+        font-weight: 50px;
+    }
+    p{
+        font-family: "Fredoka", sans-serif;
+    }
+    button#butao{
+        background-color: rgb(3, 73, 165);
+        border-radius:5px;
+        color:#FFFFFF;
+        border: none;
+        height: 30px;
+
+        position: relative;
+        top:10px;
+    }
+    a#log{
+        font-family: "Fredoka", sans-serif;
+    }
+    .txt1{
+        position: relative;
+        top :10px; 
+    }
+
+
     </style>
 </head>
  
@@ -32,12 +58,12 @@
 
         <?php if($_SESSION['perfil'] == 'admin'): ?>
             <!-- Admin pode gerenciar usuários (editar e excluir) -->
-            <a href="index.php?action=list" class="btn">Gerenciar Usuários (Admin)</a>
+            <a href="index.php?action=list" class="btn" ><button id='butao'>Gerenciar Usuários (Admin)</button></a>
  
-            <?php elseif($_SESSION['perfil'] == 'admin'): ?>
+            <?php elseif($_SESSION['perfil'] == 'gestor'): ?>
             <!-- Gestor pode gerenciar usuários (apenas editar) -->
-            <a href="index.php?action=list" class="btn">Gerenciar Usuários (Gestor)</a>
-            <p>Área exclusiva do Gestor.</p>
+            <a href="index.php?action=list" class="btn" ><button id='butao'>Gerenciar Usuários (Gestor)</button></a>
+            <p class='txt1'>Área exclusiva do Gestor.</p>
  
             <?php else: ?>
             <p>Área exclusiva do Colaborador.</p>
@@ -45,7 +71,7 @@
  
         <br><br><br><br>
         <!-- Link para logout -->
-        <a href="index.php?action=logout" class="btn">Logout</a>
+        <a href="index.php?action=logout" class="btn" id='log'>Logout</a>
     </div>
 </body>
  
