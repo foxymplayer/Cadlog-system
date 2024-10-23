@@ -44,3 +44,5 @@ adicionei o link e estilizei.
 
 * List: Já está aparecendo para colaboradores e adms, mas os botões excluir e editar ainda não estão funcionais.
 
+-já estilizado.
+

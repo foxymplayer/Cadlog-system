@@ -11,7 +11,7 @@ h1{
 }
 .fundo{
     background-color: #FFFFFF;
-    border: black;
+    border: rgb(180, 180, 180);
     border-radius: 20px;
     
     width: 500px;
@@ -69,7 +69,8 @@ h1{
 }
 
 .container{
-    background-color: #FFFFFF;
+    background-color: #d84444;
     width: 700px;
     text-align: center;
+    
 }
